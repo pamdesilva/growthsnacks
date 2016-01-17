@@ -11,6 +11,7 @@
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/animate.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
@@ -20,30 +21,54 @@
 
 <body>
 
-  <div class="main-text">
-    <h1>Growth Snacks</h1>
-    <p>Blurbxx</p>
-    <p>Signup field</p>
-    <p><small>No spam comment</small></p>
-  </div>
+  <header class="main-header">
+    <div class="main-content">
+      <img class="wow slideInDown" src="/assets/img/cookie.png" width="110" alt="Cookie">
+      <h1 class="wow slideInDown">GrowthSnacks</h1>
+      <p class="wow slideInDown">Bite-sized, actionable growth marketing hacks and ideas to help your startup skyrocket. Freshly delivered to your inbox once a week and munchable in <strong>2 minutes</strong>.</p>
+
+
+      <!-- Begin MailChimp Signup Form -->
+      <form action="//pamela.us12.list-manage.com/subscribe/post?u=d8e792e59e6f3cfce30c91853&amp;id=d0eabc0825" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-inline" target="_blank" novalidate>
+
+        <div class="form-group form-group-lg">
+          <label class="sr-only" for="mce-EMAIL">Email</label>
+
+          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_d8e792e59e6f3cfce30c91853_d0eabc0825" tabindex="-1" value=""></div>
+
+          <input type="email" value="" name="EMAIL" placeholder="your@lovelyemail.com" class="form-control required email" id="mce-EMAIL">
+        </div>
+
+        <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-success btn-lg">Subscribe</button>
+
+      </form>
+
+      <br>
+
+      <p><small>No crumbs or spam, just tasty and nutritious startup growth hacks once a week.</small></p>
+    </div>
+  </header>
 
   <section>
     Recent snacks appear here
   </section>
 
   <footer class="main-footer">
-    <img class="profilepic left" src="/assets/img/pam_sqr.jpg" alt="">
-    <h3>GrowthSnacks are baked with <i class="fa fa-heart"></i> by <a href="http://pamela.io">pamela.io</a></h3>
+    <div class="main-content">
+      <img class="profilepic left" src="/assets/img/pam_sqr.jpg" alt="">
+      <h3>GrowthSnacks are baked with <i class="fa fa-heart"></i> by <a href="http://pamela.io">pamela.io</a></h3>
 
-    <section>
-      <ul class="list-inline socialicons">
-        <li><a href="mailto:pam.desilva@gmail.com"><i class="fa fa-envelope"></i> Email</a></li>
-        <li><a href="https://twitter.com/pam_desilva"><i class="fa fa-twitter"></i> Twitter</a></li>
-        <li><a href="https://medium.com/@pamdesilva"><i class="fa fa-medium"></i> Medium</a></li>
-        <li><a href="https://my.linkedin.com/in/pamela-de-silva-57223955"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
-        <li><a href="https://github.com/pammkins"><i class="fa fa-github"></i> GitHub</a></li>
-      </ul>
-    </section>
+      <section>
+        <ul class="list-inline socialicons">
+          <li><a href="mailto:pam.desilva@gmail.com"><i class="fa fa-envelope"></i> Email</a></li>
+          <li><a href="https://twitter.com/pam_desilva"><i class="fa fa-twitter"></i> Twitter</a></li>
+          <li><a href="https://medium.com/@pamdesilva"><i class="fa fa-medium"></i> Medium</a></li>
+          <li><a href="https://my.linkedin.com/in/pamela-de-silva-57223955"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
+          <li><a href="https://github.com/pammkins"><i class="fa fa-github"></i> GitHub</a></li>
+        </ul>
+      </section>
+    </div>
   </footer>
 
 
@@ -59,10 +84,11 @@
   </script>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="/assets/js/jquery.feeds.js"></script>
+  <script src="/assets/js/wow.min.js"></script>
 
   <!-- Medium Feed -->
   <script>
+  new WOW().init();
   // $('#feed-container').feeds({
   //  feeds: {
   //    blog: 'https://medium.com/feed/@pamdesilva/',
