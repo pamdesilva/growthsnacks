@@ -1,0 +1,87 @@
+body {
+	font-family: 'PT Sans', sans-serif;
+	line-height: 150%;
+	font-size: 1.65rem;
+}
+
+.main-text {
+	width: 100%;
+	max-width: 750px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.col-center {
+	margin: 0 auto;
+	float: none;
+}
+
+.main-footer {
+	padding: 5%;
+  background:
+	    linear-gradient(
+	      rgba(3, 81, 99, 0.96),
+	      rgba(52, 3, 99, 0.65)
+
+	    ),
+	    url(/assets/img/col-left-background.jpg);
+	background-size: cover;
+  color: white;
+}
+
+	.main-footer a {
+		color: rgba(255, 255, 255, 0.71);
+		text-decoration: none;
+	}
+
+		.main-footer a:hover {
+			color: rgba(255, 255, 255, 1);
+		}
+
+		.main-footer hr {
+			border-top: 1px solid rgba(238, 238, 238, 0.45);
+		}
+
+
+.profilepic {
+	max-width: 100%;
+	border-radius: 100%;
+	width: 90px;
+	float: left;
+	margin-right: 20px;
+	border: 3px solid white;
+}
+
+
+/*@media screen and (min-width: 700px) {
+
+	body {
+		font-size: 2rem;
+	}
+
+	.profilepic {
+		width: 200px;
+	}
+}*/
+
+/*Little global things*/
+
+a {
+	transition: linear 0.2s;
+}
+
+h1 {
+	font-weight: 700;
+}
+
+p, ul {
+	margin-bottom: 1.3em;
+}
+
+.fa-heart {
+	color:red;
+}
+
+.socialicons {
+	margin-bottom: 0;
+}

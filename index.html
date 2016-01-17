@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Growth Snacks</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+  <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+  <div class="main-text">
+    <h1>Growth Snacks</h1>
+    <p>Blurbxx</p>
+    <p>Signup field</p>
+    <p><small>No spam comment</small></p>
+  </div>
+
+  <section>
+    Recent snacks appear here
+  </section>
+
+  <footer class="main-footer">
+    <img class="profilepic left" src="/assets/img/pam_sqr.jpg" alt="">
+    <h3>GrowthSnacks are baked with <i class="fa fa-heart"></i> by <a href="http://pamela.io">pamela.io</a></h3>
+
+    <section>
+      <ul class="list-inline socialicons">
+        <li><a href="mailto:pam.desilva@gmail.com"><i class="fa fa-envelope"></i> Email</a></li>
+        <li><a href="https://twitter.com/pam_desilva"><i class="fa fa-twitter"></i> Twitter</a></li>
+        <li><a href="https://medium.com/@pamdesilva"><i class="fa fa-medium"></i> Medium</a></li>
+        <li><a href="https://my.linkedin.com/in/pamela-de-silva-57223955"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
+        <li><a href="https://github.com/pammkins"><i class="fa fa-github"></i> GitHub</a></li>
+      </ul>
+    </section>
+  </footer>
+
+
+  <!-- Google Analytics -->
+  <script>
+  // (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  // (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  // m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  // })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  // ga('create', 'UA-50029165-3', 'auto');
+  // ga('send', 'pageview');
+  </script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="/assets/js/jquery.feeds.js"></script>
+
+  <!-- Medium Feed -->
+  <script>
+  // $('#feed-container').feeds({
+  //  feeds: {
+  //    blog: 'https://medium.com/feed/@pamdesilva/',
+  //  },
+  //  entryTemplate: 'exampleTemplate'
+  //   });
+  </script>
+
+  <script type="text/html" id="exampleTemplate">
+    <li class="post-stub" >
+      <a title="<!=title!>" href="<!=link!>"><!=title!></a>
+    </li>
+  </script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
