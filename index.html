@@ -23,14 +23,18 @@
 
   <header class="main-header">
     <div class="main-content">
-      <img class="wow slideInDown" data-wow-delay="2s" src="/assets/img/fortune-cookie.png" width="110" alt="Cookie">
-      <h1 class="wow fadeInUpBig">GrowthSnacks</h1>
-      <p class="wow fadeInUpBig">Bite-sized, actionable growth marketing hacks and ideas to help your startup skyrocket. Freshly delivered to your inbox and munchable in <strong>2 minutes</strong>.</p>
+
+      <div class="wow fadeInUp">
+        <img class="wow tada" data-wow-delay="1.2s" src="/assets/img/fortune-cookie.png" width="110" alt="Cookie">
+        <h1>GrowthSnacks</h1>
+      </div>
+
+      <p class="wow fadeInUp" data-wow-delay="0.4s">Bite-sized, actionable growth marketing hacks and ideas to help your startup skyrocket. Freshly delivered to your inbox and munchable in <strong>2 minutes</strong>.</p>
 
       <br>
 
       <!-- Begin MailChimp Signup Form -->
-      <form action="//pamela.us12.list-manage.com/subscribe/post?u=d8e792e59e6f3cfce30c91853&amp;id=d0eabc0825" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-inline" target="_blank" novalidate>
+      <form action="//pamela.us12.list-manage.com/subscribe/post?u=d8e792e59e6f3cfce30c91853&amp;id=d0eabc0825" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-inline" data-wow-delay="0.8s" target="_blank" novalidate>
 
         <div class="form-group form-group-lg">
           <label class="sr-only" for="mce-EMAIL">Email</label>
@@ -38,16 +42,17 @@
           <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
           <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_d8e792e59e6f3cfce30c91853_d0eabc0825" tabindex="-1" value=""></div>
 
-          <input type="email" value="" name="EMAIL" placeholder="your@lovelyemail.com" class="form-control required email" id="mce-EMAIL">
+          <input type="email" value="" name="EMAIL" placeholder="your@lovelyemail.com" class="form-control required email" id="mce-EMAIL" autofocus>
         </div>
 
-        <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-info btn-lg">Subscribe</button>
+        <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-default btn-lg">Subscribe</button>
 
       </form>
 
       <br>
 
-      <p><small>No crumbs or spam, just tasty and nutritious startup growth hacks once a week.</small></p>
+      <p class="wow fadeIn nospam" data-wow-delay="0.8s"><small>No crumbs or spam, just tasty and nutritious startup growth hacks once a week.</small></p>
+
     </div>
   </header>
 
@@ -90,6 +95,10 @@
   <!-- Medium Feed -->
   <script>
   new WOW().init();
+
+  // window.onload = function() {
+  //   var input = document.getElementById("mce-EMAIL").focus();
+  // }
   // $('#feed-container').feeds({
   //  feeds: {
   //    blog: 'https://medium.com/feed/@pamdesilva/',
