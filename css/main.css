@@ -139,6 +139,7 @@ footer p {
 }
 	@media screen and (max-width: 700px) {
 		footer p {
+			line-height: 100%;
 			font-size: 1.4em;
 		}
 	}

@@ -1,7 +1,6 @@
 # Site settings
 title: Pam De Silva
 email: pam.desilva@gmail.com
-description: "A weekly newsletter with bite-sized growth marketing hacks to help your startup skyrocket"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://growthsnacks.io" # the base hostname & protocol for your site
 
