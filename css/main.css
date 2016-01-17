@@ -19,6 +19,7 @@ body {
 /*Regular typography*/
 
 a {
+	text-decoration: none;
 	transition: linear 0.2s;
 }
 
@@ -31,26 +32,45 @@ p, ul {
 	margin-bottom: 1.3em;
 }
 
+/*Buttons*/
+
+/*.btn.outline {
+    background: none;
+}
+.btn-primary.outline {
+    border: 2px solid white;
+    color: white;
+		text-transform: uppercase;
+}
+.btn-primary.outline:hover, .btn-primary.outline:focus, .btn-primary.outline:active, .btn-primary.outline.active, .open > .dropdown-toggle.btn-primary {
+    color: #33a6cc;
+    border-color: #33a6cc;
+}
+.btn-primary.outline:active, .btn-primary.outline.active {
+    border-color: white;
+    color: white;
+    box-shadow: none;
+}*/
+
 /*Regular text content*/
 
-.main-content p {
+.main-header p {
 	/*color: rgba(255, 255, 255, 0.73);*/
 }
 
-.main-content strong {
+.main-header strong {
 	color: white;
 }
 
-.main-content a {
+.main-header a {
 	color: rgba(255, 255, 255, 0.71);
-	text-decoration: none;
 }
 
-	.main-content a:hover {
+	.main-header a:hover {
 		color: rgba(255, 255, 255, 1);
 	}
 
-	.main-content hr {
+	.main-header hr {
 		border-top: 1px solid rgba(238, 238, 238, 0.45);
 	}
 
@@ -58,12 +78,11 @@ p, ul {
 
 .main-header {
 	padding: 80px 5%;
-  background: rgb(255, 91, 91);
+  background: #F78C74; /*keycolour*/
 	/*background-size: cover;*/
   color: white;
 	text-align: center;
 }
-
 	.main-header p {
 		max-width: 500px;
 		margin-left: auto;
@@ -73,16 +92,7 @@ p, ul {
 /*Footer styling only*/
 
 .main-footer {
-	padding: 5%;
-  background:
-	    linear-gradient(
-	      rgba(3, 81, 99, 0.96),
-	      rgba(52, 3, 99, 0.65)
-
-	    ),
-	    url(/assets/img/col-left-background.jpg);
-	background-size: cover;
-  color: white;
+	padding: 30px 5%
 }
 
 .profilepic {
@@ -90,7 +100,10 @@ p, ul {
 	border-radius: 100%;
 	width: 90px;
 	margin: 0 auto;
-	border: 3px solid white;
+	border: 3px solid rgb(255, 91, 91); /*keycolour*/
+}
+.main-footer a {
+	color: rgb(255, 91, 91); /*keycolour*/
 }
 
 
