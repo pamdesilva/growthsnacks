@@ -12,10 +12,11 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/main.css">
   <link rel="stylesheet" href="/css/animate.min.css">
+  <!-- This is only getting used for the heart in the footer, so it could maybe be ditched -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+  <link rel="canonical" href="/">
+  <!-- <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" /> -->
   <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700' rel='stylesheet' type='text/css'>
 </head>
 
@@ -61,15 +62,12 @@
   </section> -->
 
   <footer>
-
       <a href="http://pamela.io">
       <p><img class="profilepic" src="/assets/img/pam_sqr.jpg" alt=""> Baked with <i class="fa fa-heart"></i> by <strong>pamela.io</strong></h4></p>
       </a>
       <br>
-      <span class="breaker"><small>Cookie illustration by <a rel="nofollow" target="_blank" href="http://www.vecteezy.com/vector-art/83282-chocolate-chip-cookies-vectors">sunshine-91</a></span></p>
-
+      <p class="breaker"><small>Thanks to <a rel="nofollow" target="_blank" href="http://www.vecteezy.com/vector-art/83282-chocolate-chip-cookies-vectors">sunshine-91</a> for the handy cookie illustration.</small></p>
   </footer>
-
 
   <!-- Google Analytics -->
   <script>
@@ -77,7 +75,6 @@
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
     ga('create', 'UA-50029165-4', 'auto');
     ga('send', 'pageview');
   </script>
@@ -89,6 +86,7 @@
   <script>
   new WOW().init();
 
+  // Grad Medium feed recent posts
   // window.onload = function() {
   //   var input = document.getElementById("mce-EMAIL").focus();
   // }
