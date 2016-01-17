@@ -1,11 +1,13 @@
 body {
 	font-family: 'PT Sans', sans-serif;
 	line-height: 150%;
-	font-size: 1.2rem;
+	font-size: 1.1rem;
 }
 
 @media screen and (min-width: 700px) {
-	font-size: 1.65rem;
+	body {
+		font-size: 1.65rem;
+	}
 }
 
 .main-content {
@@ -25,11 +27,17 @@ HEADER
 ====================== */
 
 header {
-	padding: 8em 5%;
+	padding: 3em 5%;
   background: #FE715F; /*keycolour*/
   color: white;
 	text-align: center;
 }
+	@media screen and (min-width: 700px) {
+		header {
+			padding: 8em 5%;
+		}
+	}
+
 	header p {
 		max-width: 500px;
 		margin-left: auto;
@@ -39,42 +47,60 @@ header {
 	}
 
 	header .para-emoji {
-		width: 30px;
+		width: 20px;
+	}
+	@media screen and (min-width: 700px) {
+		header .para-emoji {
+			width: 30px;
+		}
 	}
 
-header h1 {
-	font-weight: 700;
-	font-size: 4em;
-	margin-top: 10px;
-	text-shadow: 1px 2px 3px rgba(84, 45, 5, 0.53);
-}
-header p {
-	text-shadow: 1px 1px 3px rgba(84, 45, 5, 0.33);
-}
+	header h1 {
+		font-weight: 700;
+		font-size: 3em;
+		margin-top: 10px;
+		text-shadow: 1px 2px 3px rgba(84, 45, 5, 0.53);
+	}
+		@media screen and (min-width: 350px) {
+			header h1 {
+				font-size: 4em;
+			}
+		}
 
-header strong {
-	color: white;
-}
+	header p {
+		text-shadow: 1px 1px 3px rgba(84, 45, 5, 0.33);
+	}
 
-header a {
-	font-weight: bold;
-	color: white;
-}
-	header a:hover {
+	header strong {
 		color: white;
 	}
 
-header .nospam {
-	line-height: 100%;
-}
-	.nospam small {
-		font-size: 0.8em;
+	header a {
+		font-weight: bold;
+		color: white;
+	}
+		header a:hover {
+			color: white;
+		}
+
+	header .nospam {
+		line-height: 100%;
+	}
+		.nospam small {
+			font-size: 0.8em;
+		}
+
+	/*Make that rocket fly outta here*/
+	header p:hover .para-emoji {
+	  -webkit-animation: bounceOutUp 1s;
+	  animation: bounceOutUp 1s;
 	}
 
-header p:hover .para-emoji {
-  -webkit-animation: bounceOutUp 1s;
-  animation: bounceOutUp 1s;
-}
+	@media screen and (max-width: 350px) {
+		.header__cookie {
+			width: 100px;
+		}
+	}
 
 
 /* ======================
@@ -105,6 +131,11 @@ footer p {
 	margin: auto;
 	line-height: 45px;
 }
+	@media screen and (max-width: 700px) {
+		footer p {
+			font-size: 1.4em;
+		}
+	}
 
 .profilepic {
 	max-width: 100%;
@@ -123,17 +154,22 @@ footer a {
 }
 
 footer p:hover .fa-heart {
-    -webkit-animation: bounce 1s;
-    animation: bounce 1s;
+  -webkit-animation: bounce 1s;
+  animation: bounce 1s;
 }
 
 footer .breaker {
 	clear: both;
 	display: block;
 	color: gray;
-	font-size: 0.8em;
+	font-size: 1.5em;
 	margin-top: 1.4em;
 	line-height: 100%;
+}
+@media screen and (min-width: 700px) {
+	footer .breaker {
+		font-size: 0.8em;
+	}
 }
 
 /* ======================
